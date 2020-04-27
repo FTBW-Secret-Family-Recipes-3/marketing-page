@@ -1,0 +1,155 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+  max-width: 100%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 8% 0 8%;
+  background: #FAF0E6;
+}
+h1 {
+  font-size: 4rem;
+  font-family: 'Limelight', cursive;
+  color: #C0C0C0;
+}
+h2 {
+  font-size: 3rem;
+  color: blue;
+}
+nav {
+  width: 70%;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links a {
+  text-decoration: none;
+  color: #b2e6d4;
+  font-size: 2.3rem;
+}
+.loginLink a {
+  color: red;
+}
+header {
+  height: 20vh;
+}
+.mainImg {
+  background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fpreviews.123rf.com%2Fimages%2Fkesu87%2Fkesu871905%2Fkesu87190500158%2F123493213-asian-food-background-with-various-ingredients-on-rustic-wooden-table-top-view-.jpg&imgrefurl=https%3A%2F%2Fwww.123rf.com%2Fphoto_123493213_asian-food-background-with-various-ingredients-on-rustic-wooden-table--top-view.html&tbnid=5wdNpMhEtnnVnM&vet=12ahUKEwiB4ciQqonpAhXCBTQIHVkNCZYQMygGegUIARC3Ag..i&docid=pINkhPJKKLYb-M&w=1300&h=794&q=rustic%20food%20image&ved=2ahUKEwiB4ciQqonpAhXCBTQIHVkNCZYQMygGegUIARC3Ag);
+  height: 50vh;
+  width: 100%;
+}
+.mainImg .welcomeText {
+  text-align: center;
+  padding-top: 10%;
+}
+.recipe-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.recipe-container .recipeCards {
+  width: 30%;
+}
