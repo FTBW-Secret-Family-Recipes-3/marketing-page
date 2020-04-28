@@ -3,9 +3,13 @@ header {
 }
 
 .mainImg {
-    background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fpreviews.123rf.com%2Fimages%2Fkesu87%2Fkesu871905%2Fkesu87190500158%2F123493213-asian-food-background-with-various-ingredients-on-rustic-wooden-table-top-view-.jpg&imgrefurl=https%3A%2F%2Fwww.123rf.com%2Fphoto_123493213_asian-food-background-with-various-ingredients-on-rustic-wooden-table--top-view.html&tbnid=5wdNpMhEtnnVnM&vet=12ahUKEwiB4ciQqonpAhXCBTQIHVkNCZYQMygGegUIARC3Ag..i&docid=pINkhPJKKLYb-M&w=1300&h=794&q=rustic%20food%20image&ved=2ahUKEwiB4ciQqonpAhXCBTQIHVkNCZYQMygGegUIARC3Ag);
+    background-image: url(https://media-public.canva.com/MADQ44O_CpA/1/thumbnail_large-1.jpg);
+    background-repeat: no-repeat;
     height: 50vh;
     width: 100%;
+    .flex(row, center, center);
+    // display: flex;
+    // align-content: center;
 
     .welcomeText {
         text-align: center;
@@ -14,12 +18,17 @@ header {
 } // closes mainImg
 
 
-
 .recipe-container {
     .flex(row, space-evenly, center);
+    // padding: 2%;
+    padding-bottom: 5%;
 
     .recipeCards {
-        width: 30%;
-    }
-}
+        width: 25%;
+        height: 50vh;
+        border: solid 2px silver;
+        padding: 1%;
+    } // closes recipeCards
+} // closes recipe-container
+
 

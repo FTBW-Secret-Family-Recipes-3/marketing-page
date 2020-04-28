@@ -97,17 +97,29 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0 8% 0 8%;
   background: #FAF0E6;
+}
+.container {
+  margin: 0 5% 0 5%;
 }
 h1 {
   font-size: 4rem;
-  font-family: 'Limelight', cursive;
+  font-family: 'Fredericka the Great', cursive;
   color: #C0C0C0;
 }
 h2 {
-  font-size: 3rem;
-  color: blue;
+  font-size: 6rem;
+  color: wheat;
+  font-family: 'Seaweed Script', cursive;
+}
+h3 {
+  font-size: 2.4rem;
+  text-align: center;
+}
+h4 {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 2%;
 }
 nav {
   width: 70%;
@@ -136,9 +148,14 @@ header {
   height: 20vh;
 }
 .mainImg {
-  background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fpreviews.123rf.com%2Fimages%2Fkesu87%2Fkesu871905%2Fkesu87190500158%2F123493213-asian-food-background-with-various-ingredients-on-rustic-wooden-table-top-view-.jpg&imgrefurl=https%3A%2F%2Fwww.123rf.com%2Fphoto_123493213_asian-food-background-with-various-ingredients-on-rustic-wooden-table--top-view.html&tbnid=5wdNpMhEtnnVnM&vet=12ahUKEwiB4ciQqonpAhXCBTQIHVkNCZYQMygGegUIARC3Ag..i&docid=pINkhPJKKLYb-M&w=1300&h=794&q=rustic%20food%20image&ved=2ahUKEwiB4ciQqonpAhXCBTQIHVkNCZYQMygGegUIARC3Ag);
+  background-image: url(https://media-public.canva.com/MADQ44O_CpA/1/thumbnail_large-1.jpg);
+  background-repeat: no-repeat;
   height: 50vh;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .mainImg .welcomeText {
   text-align: center;
@@ -149,7 +166,15 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 5%;
 }
 .recipe-container .recipeCards {
-  width: 30%;
+  width: 25%;
+  height: 50vh;
+  border: solid 2px silver;
+  padding: 1%;
+}
+footer {
+  background: #DEB887;
+  height: 10vh;
 }
