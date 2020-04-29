@@ -9,13 +9,6 @@ header {
 }
 
 .mainImg {
-    // background-image: url(https://media-public.canva.com/MADQ44O_CpA/1/thumbnail_large-1.jpg);
-    // background-repeat: no-repeat;
-    // background-size: auto;
-    // height: 50vh;
-    // width: 50%;
-    // .flex();
-  
     position: relative;
     width: 100%;
 
@@ -24,15 +17,12 @@ header {
         top: 200px;
         left: 0;
         width: 100%;
-        // text-align: center;
-        // padding-top: 10%;
     } //closes welcomeText
 } // closes mainImg
 
 
 .recipe-container {
     .flex(row, space-evenly, center);
-    // padding: 2%;
     padding-bottom: 5%;
 
     .recipeCards {
@@ -40,6 +30,11 @@ header {
         height: 50vh;
         border: solid 2px #DEB887;
         padding: 1%;
+
+        @media @tablet {
+            // height: 20vh;
+            // width: 50%;
+        } // closes tablet media query 
     } // closes recipeCards
 } // closes recipe-container
 

@@ -1,0 +1,49 @@
+header {
+    height: 25vh;
+}
+
+
+.profile-container {
+    .flex(row, space-evenly, center);
+    padding-bottom: 5%;
+
+        @media @mobile {
+            .flex(column, center, center);
+            padding-bottom: 3%;
+        }
+
+    .usCards {
+        width: 25%;
+        height: 54vh;
+        border: solid 2px #DEB887;
+        padding: 1%;
+        text-align: center;
+        
+
+        @media @mobile {
+            width: 60%;
+            margin: 5%;
+            height: 57vh;
+        }
+
+        img {
+            height: 30vh;
+            
+            @media @mobile {
+                height: 37vh;
+                width: 70%;
+            } // closes mobile media query
+        } // closes img
+    } // closes recipeCards
+} // closes recipe-container
+
+
+p {
+    font-size: 1.6rem;
+    padding-top: 2%;
+
+    @media @mobile {
+        font-size: 1.4rem;
+    }
+}
+

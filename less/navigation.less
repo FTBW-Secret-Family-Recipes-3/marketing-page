@@ -3,11 +3,17 @@ nav {
     padding: 5% 0% 5% 0;
     .flex(row, space-between, center);
 
-
     .links {
         width: 20%;
-        
         .flex(row, space-between, center);
+
+        @media @tablet {
+            width: 30%;
+        }// closes media tablet
+
+        @media @mobile {
+            width: 50%;
+        }
 
         a {
             text-decoration: none;
