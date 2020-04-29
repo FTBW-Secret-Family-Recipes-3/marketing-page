@@ -1,6 +1,5 @@
 nav {
     width: 90%;
-    padding: 5% 0% 5% 0;
     .flex(row, space-between, center);
 
     .links {
@@ -9,16 +8,20 @@ nav {
 
         @media @tablet {
             width: 30%;
-        }// closes media tablet
+        }// closes tablet media query
 
         @media @mobile {
-            width: 50%;
-        }
+            width: 25%;
+        } // closes mobile media query
 
         a {
             text-decoration: none;
             color: @font-nav;
             font-size: 2.3rem;
+
+            @media @mobile {
+                font-size: 1.6rem;
+            }
 
             &:hover {
                 color: @main-font;
@@ -32,10 +35,18 @@ nav {
     background: #b2e6d4;
     padding: 1%;
 
+    @media @mobile {
+        width: 17%;
+    }
+
     a {
         text-decoration: none;
         color: white;
         font-size: 2.3rem;
+
+        @media @mobile {
+            font-size: 1.5rem;
+        }
 
         &:hover {
             color: #65d7cf;

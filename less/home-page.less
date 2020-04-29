@@ -1,5 +1,9 @@
 header {
-    height: 25vh;
+    height: 30vh;
+
+    img {
+        width: 100%;
+    }
 }
 
 .welcome-user {
@@ -17,6 +21,14 @@ header {
         top: 200px;
         left: 0;
         width: 100%;
+
+        @media @tablet {
+            top: 50px;
+        } // closes tablet media query
+        
+        @media @mobile {
+            top: 30px;
+        }
     } //closes welcomeText
 } // closes mainImg
 
@@ -32,9 +44,13 @@ header {
         padding: 1%;
 
         @media @tablet {
-            // height: 20vh;
-            // width: 50%;
+            width: 45%;
+            margin: 2%;
         } // closes tablet media query 
+
+        @media @mobile {
+            height: 40vh;
+        } // closes mobile media query
     } // closes recipeCards
 } // closes recipe-container
 

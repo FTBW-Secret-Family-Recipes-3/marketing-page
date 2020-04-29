@@ -103,9 +103,15 @@ body {
   margin: 0 5% 0 5%;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 8rem;
   font-family: 'Fredericka the Great', cursive;
   color: #65d7cf;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 h2 {
   font-size: 8rem;
@@ -118,6 +124,16 @@ h3 {
   text-align: center;
   font-family: 'Playfair Display', serif;
 }
+@media (max-width: 800px) {
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 800px) {
+  h3 {
+    font-size: 1.3rem;
+  }
+}
 h4 {
   font-size: 1.6rem;
   text-align: center;
@@ -125,18 +141,28 @@ h4 {
   text-transform: uppercase;
   color: #C0C0C0;
 }
+@media (max-width: 500px) {
+  h4 {
+    font-size: 1.3rem;
+  }
+}
 h5 {
   font-size: 2rem;
   text-align: center;
   padding-top: 2%;
 }
 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.2rem;
+  }
 }
 nav {
   width: 90%;
-  padding: 5% 0% 5% 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,10 +175,25 @@ nav .links {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 800px) {
+  nav .links {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 25%;
+  }
+}
 nav .links a {
   text-decoration: none;
   color: #DEB887;
   font-size: 2.3rem;
+}
+@media (max-width: 500px) {
+  nav .links a {
+    font-size: 1.6rem;
+  }
 }
 nav .links a:hover {
   color: #F5DEB3;
@@ -162,16 +203,29 @@ nav .links a:hover {
   background: #b2e6d4;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .signupLink {
+    width: 17%;
+  }
+}
 .signupLink a {
   text-decoration: none;
   color: white;
   font-size: 2.3rem;
 }
+@media (max-width: 500px) {
+  .signupLink a {
+    font-size: 1.5rem;
+  }
+}
 .signupLink a:hover {
   color: #65d7cf;
 }
 header {
-  height: 25vh;
+  height: 30vh;
+}
+header img {
+  width: 100%;
 }
 .welcome-user {
   display: flex;
@@ -191,6 +245,16 @@ header {
   left: 0;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .mainImg .welcomeText {
+    top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .mainImg .welcomeText {
+    top: 30px;
+  }
+}
 .recipe-container {
   display: flex;
   flex-direction: row;
@@ -203,6 +267,17 @@ header {
   height: 50vh;
   border: solid 2px #DEB887;
   padding: 1%;
+}
+@media (max-width: 800px) {
+  .recipe-container .recipeCards {
+    width: 45%;
+    margin: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .recipe-container .recipeCards {
+    height: 40vh;
+  }
 }
 footer {
   background: #DEB887;

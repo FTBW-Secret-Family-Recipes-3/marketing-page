@@ -19,9 +19,14 @@ html, body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: 'Fredericka the Great', cursive;
     color: #65d7cf;
+    text-align: center;
+
+    @media @mobile {
+        font-size: 4rem;
+    }
 }
 
 h2 {
@@ -35,6 +40,14 @@ h3 {
     font-size: 1.9rem;
     text-align: center;
     font-family: 'Playfair Display', serif;
+
+    @media @tablet {
+        font-size: 1.7rem;
+    }
+
+    @media @tablet {
+        font-size: 1.3rem;
+    }
 }
 
 h4 {
@@ -43,6 +56,10 @@ h4 {
     padding-top: 2%;
     text-transform: uppercase;
     color: #C0C0C0;
+
+    @media @mobile {
+        font-size: 1.3rem;
+    }
 }
 
 h5 {
@@ -52,10 +69,12 @@ h5 {
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
+    padding-top: 2%;
 
     @media @mobile {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
+
