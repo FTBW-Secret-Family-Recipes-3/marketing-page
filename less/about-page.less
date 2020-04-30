@@ -2,6 +2,30 @@ header {
     height: 25vh;
 }
 
+.mainImg {
+    position: relative;
+    padding-bottom: 5%;
+    .flex(row, center, center);
+
+    img {
+        width: 70%;
+    }
+
+    .aboutText {
+        position: absolute;
+        top: 110px;
+        left: 0;
+        width: 100%;
+
+        @media @tablet {
+            top: 50px;
+        } // closes tablet media query
+        
+        @media @mobile {
+            top: 30px;
+        }
+    } //closes welcomeText
+} // closes mainImg
 
 .profile-container {
     .flex(row, space-evenly, center);

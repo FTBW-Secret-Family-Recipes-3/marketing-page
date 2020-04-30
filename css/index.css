@@ -108,6 +108,11 @@ h1 {
   color: #65d7cf;
   text-align: center;
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
 @media (max-width: 500px) {
   h1 {
     font-size: 4rem;
@@ -129,7 +134,7 @@ h3 {
     font-size: 1.7rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   h3 {
     font-size: 1.3rem;
   }
@@ -202,6 +207,14 @@ nav .links a:hover {
   border: solid 2px #b2e6d4;
   background: #b2e6d4;
   padding: 1%;
+  border-radius: 4px;
+  width: 12%;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .signupLink {
+    width: 17%;
+  }
 }
 @media (max-width: 500px) {
   .signupLink {
@@ -233,7 +246,7 @@ header img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 8%;
+  padding-bottom: 4%;
 }
 .mainImg {
   position: relative;
@@ -255,6 +268,61 @@ header img {
     top: 30px;
   }
 }
+.howTo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.howTo-container .instructionCard {
+  width: 50%;
+  height: 105vh;
+  border: solid 2px #DEB887;
+  border-radius: 4px;
+  padding: 2%;
+  background: #DEB887;
+  margin-bottom: 6%;
+}
+@media (max-width: 800px) {
+  .howTo-container .instructionCard {
+    width: 80%;
+    height: 100vh;
+  }
+}
+@media (max-width: 500px) {
+  .howTo-container .instructionCard {
+    height: 73vh;
+  }
+}
+.howTo-container .instructionCard .signupMid {
+  border: solid 2px #b2e6d4;
+  background: #b2e6d4;
+  padding: 1%;
+  border-radius: 4px;
+  width: 12%;
+  text-align: center;
+  align-items: center;
+  margin: 3% 0 5% 35%;
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .howTo-container .instructionCard .signupMid {
+    width: 30%;
+  }
+}
+.howTo-container .instructionCard .signupMid a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.3rem;
+}
+@media (max-width: 500px) {
+  .howTo-container .instructionCard .signupMid a {
+    font-size: 1.5rem;
+  }
+}
+.howTo-container .instructionCard .signupMid a:hover {
+  color: #65d7cf;
+}
 .recipe-container {
   display: flex;
   flex-direction: row;
@@ -264,14 +332,16 @@ header img {
 }
 .recipe-container .recipeCards {
   width: 25%;
-  height: 50vh;
+  height: 55vh;
   border: solid 2px #DEB887;
+  border-radius: 4px;
   padding: 1%;
 }
 @media (max-width: 800px) {
   .recipe-container .recipeCards {
     width: 45%;
     margin: 2%;
+    height: 50vh;
   }
 }
 @media (max-width: 500px) {

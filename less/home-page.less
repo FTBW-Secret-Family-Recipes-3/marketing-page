@@ -9,7 +9,7 @@ header {
 .welcome-user {
     .flex(row, center, center);
     width: 100%;
-    padding-bottom: 8%;
+    padding-bottom: 4%;
 }
 
 .mainImg {
@@ -32,6 +32,58 @@ header {
     } //closes welcomeText
 } // closes mainImg
 
+.howTo-container {
+    .flex(row, space-evenly, center);
+
+    .instructionCard {
+        width: 50%;
+        height: 105vh;
+        border: solid 2px #DEB887;
+        border-radius: 4px;
+        padding: 2%;
+        background: @footer-bg;
+        margin-bottom: 6%;
+
+        @media @tablet {
+            width: 80%;
+            height: 100vh;
+        }
+
+        @media @mobile {
+            height: 73vh;
+        }
+
+        .signupMid {
+            border: solid 2px #b2e6d4;
+            background: #b2e6d4;
+            padding: 1%;
+            border-radius: 4px;
+            width: 12%;
+            text-align: center;
+            align-items: center;
+            margin: 3% 0 5% 35%;
+            width: 30%;
+        
+            @media @mobile {
+                width: 30%;
+            }
+        
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 2.3rem;
+        
+                @media @mobile {
+                    font-size: 1.5rem;
+                }
+        
+                &:hover {
+                    color: #65d7cf;
+                     } //closes hover
+                 } // closes a
+        } // closes singupMid
+    } // closes instructionCard
+} // closes howTo-container
 
 .recipe-container {
     .flex(row, space-evenly, center);
@@ -39,13 +91,15 @@ header {
 
     .recipeCards {
         width: 25%;
-        height: 50vh;
+        height: 55vh;
         border: solid 2px #DEB887;
+        border-radius: 4px;
         padding: 1%;
 
         @media @tablet {
             width: 45%;
             margin: 2%;
+            height: 50vh;
         } // closes tablet media query 
 
         @media @mobile {
