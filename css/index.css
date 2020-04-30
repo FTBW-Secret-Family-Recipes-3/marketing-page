@@ -113,9 +113,14 @@ h1 {
     font-size: 5rem;
   }
 }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
 @media (max-width: 500px) {
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 h2 {
@@ -161,6 +166,11 @@ p {
   text-align: center;
   padding-top: 2%;
 }
+@media (max-width: 600px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
 @media (max-width: 500px) {
   p {
     font-size: 1.2rem;
@@ -188,6 +198,10 @@ nav .links {
 @media (max-width: 500px) {
   nav .links {
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 nav .links a {
@@ -218,7 +232,12 @@ nav .links a:hover {
 }
 @media (max-width: 500px) {
   .signupLink {
-    width: 17%;
+    width: 19%;
+  }
+}
+@media (max-width: 400px) {
+  .signupLink {
+    width: 20%;
   }
 }
 .signupLink a {
@@ -258,9 +277,14 @@ header img {
   left: 0;
   width: 100%;
 }
+@media (max-width: 1000px) {
+  .mainImg .welcomeText {
+    top: 70px;
+  }
+}
 @media (max-width: 800px) {
   .mainImg .welcomeText {
-    top: 50px;
+    top: 40px;
   }
 }
 @media (max-width: 500px) {
@@ -330,6 +354,14 @@ header img {
   align-items: center;
   padding-bottom: 5%;
 }
+@media (max-width: 400px) {
+  .recipe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .recipe-container .recipeCards {
   width: 25%;
   height: 55vh;
@@ -347,6 +379,12 @@ header img {
 @media (max-width: 500px) {
   .recipe-container .recipeCards {
     height: 40vh;
+  }
+}
+@media (max-width: 400px) {
+  .recipe-container .recipeCards {
+    width: 80%;
+    height: 47vh;
   }
 }
 footer {

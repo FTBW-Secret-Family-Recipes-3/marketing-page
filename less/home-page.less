@@ -22,8 +22,12 @@ header {
         left: 0;
         width: 100%;
 
+        @media @desktop {
+            top: 70px;
+        }
+
         @media @tablet {
-            top: 50px;
+            top: 40px;
         } // closes tablet media query
         
         @media @mobile {
@@ -52,6 +56,7 @@ header {
         @media @mobile {
             height: 73vh;
         }
+
 
         .signupMid {
             border: solid 2px #b2e6d4;
@@ -89,6 +94,10 @@ header {
     .flex(row, space-evenly, center);
     padding-bottom: 5%;
 
+    @media @smallMobile {
+        .flex(column);
+    }
+
     .recipeCards {
         width: 25%;
         height: 55vh;
@@ -105,6 +114,10 @@ header {
         @media @mobile {
             height: 40vh;
         } // closes mobile media query
+        @media @smallMobile {
+            width: 80%;
+            height: 47vh;
+        }
     } // closes recipeCards
 } // closes recipe-container
 
